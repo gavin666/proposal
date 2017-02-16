@@ -1,0 +1,32 @@
+{
+  "name": "proposal",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "spring-boot and angularJS",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-uglify": "latest",
+    "gulp-filter": "latest",
+    "gulp-replace": "latest",
+    "gulp-useref": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-ng-annotate": "latest",
+    "gulp-sass": "latest",
+    "gulp-rev": "latest",
+    "gulp-rev-replace": "latest",
+    "gulp-flatten": "latest",
+    "gulp-jshint": "latest",
+    "gulp-htmlhint": "latest",
+    "jshint-stylish": "latest",
+    "htmlhint-stylish": "latest",
+    "wiredep": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "http-proxy-middleware": "latest"
+  }
+}
