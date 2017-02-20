@@ -1,6 +1,13 @@
 spring:
+  profiles:
+    active: dev
+
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/test?autoReconnect=true
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
+
+logging:
+  level: debug
+  file: D:/test.log
