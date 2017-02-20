@@ -1,3 +1,8 @@
 server:
-  port: 80
+  port: 8443
   contextPath: /
+  ssl:
+    key-store: test.keystore
+    key-store-password: 111111
+    key-store-type: JKS
+    key-alias: test1
