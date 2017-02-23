@@ -2,7 +2,7 @@ package com.insiap.webapp.controller;
 
 import com.insiap.webapp.dao.PersonMongoRepository;
 import com.insiap.webapp.domain.Location;
-import com.insiap.webapp.domain.Person;
+import com.insiap.webapp.domain.MongoPerson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,8 +20,8 @@ public class MongoDataController {
     PersonMongoRepository personMongoRepository;
 
     @RequestMapping("/save")
-    public Person save(){
-        Person person = new Person("test",33);
+    public MongoPerson save(){
+        MongoPerson person = new MongoPerson("test",33);
         Collection<Location> locations = new LinkedHashSet<Location>();
         Location loc1 = new Location("上海","1");
         locations.add(loc1);
@@ -34,12 +34,12 @@ public class MongoDataController {
     }
 
     @RequestMapping("/q1")
-    public Person q1(String name){
+    public MongoPerson q1(String name){
         return personMongoRepository.findByName(name);
     }
 
     @RequestMapping("/q2")
-    public List<Person> q2(Integer age){
+    public List<MongoPerson> q2(Integer age){
         return personMongoRepository.withQueryFindByAge(age);
     }
 }

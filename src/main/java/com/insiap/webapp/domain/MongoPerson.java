@@ -12,14 +12,14 @@ import java.util.LinkedHashSet;
  * Created by Gavin.Gao on 2017/2/22.
  */
 @Document
-public class Person {
+public class MongoPerson {
     @Id
     private String id;
     private String name;
     private Integer age;
     @Field("locs")
     private Collection<Location> Locations = new LinkedHashSet<Location>();
-    public Person(String name,Integer age){
+    public MongoPerson(String name, Integer age){
         super();
         this.name = name;
         this.age = age;
